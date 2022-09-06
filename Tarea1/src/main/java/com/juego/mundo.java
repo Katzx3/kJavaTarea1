@@ -15,8 +15,20 @@ public class mundo {
         this.marcador = marcador;
     }
 
-    public void dibujo(){
-        System.out.println("EL mundo tiene"+getAltura()+" unidades de alturar y " +getAncho()+" unidades" +
-                "de altura.");
+    public void dibujo() {
+        for (int i = 0; i < altura; i++)
+        {
+            System.out.println();
+            for (int j = 0; j < ancho; j++)
+            {
+
+                if (i == 0 || i == altura-1 ||
+                        j== 0 || j == ancho-1)
+                    System.out.print(marcador);
+                else
+                    System.out.print(" ");
+            }
+
+            }
+        }
     }
-}

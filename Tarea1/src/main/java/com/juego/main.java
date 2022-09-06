@@ -15,7 +15,7 @@ public class main {
         //better.danomano();
         //better.danoarma();
 
-        mundo nivel1 = new mundo(3,7,"x");
+        mundo nivel1 = new mundo(4,10,"$");
 
         nivel1.dibujo();
     }
