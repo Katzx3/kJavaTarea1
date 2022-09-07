@@ -16,7 +16,7 @@ public class enemigo extends jugador{
     }
 
     @Override
-    public void danomano() {
+    public int danomano() {
         if(armadura){
             this.salud -=2;
             if(this.salud <= 0){
@@ -36,6 +36,7 @@ public class enemigo extends jugador{
         if(this.salud == 0){
             System.out.println( getNombre()+" fue derrotado");
         }
+        return 1;
     }
 
     @Override

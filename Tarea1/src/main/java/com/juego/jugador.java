@@ -22,16 +22,20 @@ public class jugador {
         }
     }
 
-    public void danomano(){
+    public int danomano() {
         this.salud -= 10;
-        if(this.salud <=0){
-            this.salud =0;
+        if (this.salud <= 0) {
+            this.salud = 0;
+
         }
-        System.out.println(getNombre()+" fue herido por un mano a mano. La salud fue reducida en 10 unidades"+
-                " su nuevo nivel del salud es "+this.salud);
-        if(this.salud == 0){
-            System.out.println( getNombre()+" esta muerto");
+        System.out.println(getNombre() + " fue herido por un mano a mano. La salud fue reducida en 10 unidades" +
+                " su nuevo nivel del salud es " + this.salud);
+
+        if (this.salud == 0) {
+            System.out.println(getNombre() + " esta muerto");
+
         }
+        return 1;
     }
 
     public void danoarma(){
