@@ -8,25 +8,24 @@ import java.io.IOException;
 public class main {
 
     public static void main(String[] args) throws IOException {
-        //jugador player1 = new jugador("Alex","puno",500);
+        //jugador player1 = new jugador("Pedro","espada",300);
         //System.out.println(player1.getNombre());
-      //  System.out.println(player1.getSalud());
-       // System.out.println(player1.getArma());
+        //System.out.println(player1.getSalud());
+        //System.out.println(player1.getArma());
 
-       // player1.danoarma();
+       //player1.danoarma();
 
-        //enemigo better = new enemigo("badguy","sword", 70, true);
+       //enemigo enemigo1 = new enemigo("Juan","mano a mano", 50, true);
+        //enemigo1.danomano();
+        //enemigo1.danoarma();
 
-        //better.danomano();
-        //better.danoarma();
+        mundo nivel2 = new mundo(20,50,"*");
+        nivel2.dibujo();
 
-        //mundo nivel1 = new mundo(4,10,"$");
-        //nivel1.dibujo();
+        System.out.println(" ");
 
-        //System.out.println(" ");
-
-        //mapa nuevoNivel = new mapa();
-        //nuevoNivel.plantillaMapa();
+        mapa nuevoNivel = new mapa();
+        nuevoNivel.plantillaMapa();
 
         mapa nuevoLevel = new mapa();
         nuevoLevel.plantillaMapa();

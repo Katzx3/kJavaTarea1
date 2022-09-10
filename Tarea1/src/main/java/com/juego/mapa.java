@@ -8,7 +8,7 @@ import org.apache.pdfbox.pdmodel.font.PDType1Font;
 
 import java.io.IOException;
 
-public class mapa {
+public class mapa{
 
     public mapa() {
     }
@@ -40,7 +40,7 @@ public class mapa {
         dibujo.close();
 
 
-        plantilla.save("/home/alexander/Descargas/mapaTexto2");
+        plantilla.save("C:\\Users\\USUARIO\\Documents\\GitHub\\kJavaTarea1\\Tarea1\\mapa_prubaExpo.pdf");
         System.out.println("Pdf is created");
         plantilla.close();
 

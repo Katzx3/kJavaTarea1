@@ -5,7 +5,7 @@ import lombok.Getter;
 import lombok.Setter;
 
 @Getter @Setter
-public class jugador {
+public class jugador implements entidad{
     private String nombre;
     private String arma;
     private int salud;
@@ -49,4 +49,5 @@ public class jugador {
             System.out.println( getNombre()+" esta muerto");
         }
     }
+
 }
