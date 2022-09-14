@@ -1,15 +1,21 @@
 package com.juego;
 
+
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.apache.pdfbox.pdmodel.PDDocument;
-import org.apache.pdfbox.pdmodel.PDFormContentStream;
 import org.apache.pdfbox.pdmodel.PDPage;
 import org.apache.pdfbox.pdmodel.PDPageContentStream;
 import org.apache.pdfbox.pdmodel.font.PDType1Font;
+
 
 import java.io.IOException;
 
 public class mapa{
 
+private static Logger logger = LogManager.getLogger(mapa.class);
+
+  //Constructor de mapa, pdfbox requiere una Exception
     public mapa() {
     }
 
@@ -21,7 +27,7 @@ public class mapa{
 
         PDPageContentStream dibujo = new PDPageContentStream(plantilla,nivel);
         dibujo.beginText();
-        dibujo.setFont(PDType1Font.TIMES_ROMAN, 12);
+        dibujo.setFont(PDType1Font.HELVETICA, 12);
         dibujo.setLeading(16.0f);
         dibujo.newLineAtOffset(25,nivel.getTrimBox().getHeight() -25);
 
@@ -40,8 +46,13 @@ public class mapa{
         dibujo.close();
 
 
-        plantilla.save("C:\\Users\\USUARIO\\Documents\\GitHub\\kJavaTarea1\\Tarea1\\mapa_prubaExpo.pdf");
-        System.out.println("Pdf is created");
+        plantilla.save("/home/alexander/Documentos/GitHub/kJavaTarea1/Tarea1/mapa_pruebaExpo2.pdf");
+        logger.error("Pdf is created");
+        logger.warn("Pdf is created");
+        logger.info("Pdf is created");
+        logger.fatal("Pdf is created");
+        logger.debug("Pdf is created");
+
         plantilla.close();
 
     }

@@ -15,7 +15,7 @@ public class mundo {
         this.marcador = marcador;
     }
 
-    public void dibujo() {
+    public int dibujo() {
         for (int i = 0; i < altura; i++)
         {
             System.out.println();
@@ -30,5 +30,6 @@ public class mundo {
             }
 
             }
-        }
+        return 0;
+    }
     }
