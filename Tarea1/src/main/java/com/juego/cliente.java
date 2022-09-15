@@ -29,6 +29,11 @@ public class cliente {
         Magus.accionPelear();
         Magus.accionArma();
 
+        CloneFactory nuevoClon = new CloneFactory();
+        Bat dracula = new Bat();
+        Bat clonedBat = (Bat) nuevoClon.copiar(dracula);
+        System.out.println(dracula);
+
 
 
     }
