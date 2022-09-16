@@ -1,0 +1,5 @@
+2022-09-16 10:46:22.470 [main] ERROR com.juego.mapa - Pdf is created
+2022-09-16 10:46:22.477 [main] WARN  com.juego.mapa - Pdf is created
+2022-09-16 10:46:22.477 [main] INFO  com.juego.mapa - Pdf is created
+2022-09-16 10:46:22.479 [main] FATAL com.juego.mapa - Pdf is created
+2022-09-16 10:46:22.479 [main] DEBUG com.juego.mapa - Pdf is created
